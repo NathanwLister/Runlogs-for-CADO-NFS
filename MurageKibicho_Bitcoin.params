@@ -1,0 +1,103 @@
+
+###########################################################################
+#     Murage Kibicho's Parameter file for Cado-NFS ; DLP version
+###########################################################################
+#General parameters MUST change lol
+## Set N to your target
+## Change builddir,sourcedir,tasks.workdir  
+
+###########################################################################
+# General parameters
+###########################################################################
+
+name = p95
+N = 115792089237316195423570985008687907853269984665640564039457584007908834671663
+sourcedir= /home/mint/cado-nfs
+builddir= /home/mint/cado-nfs/build/mint
+myworkdir = /home/mint
+
+tasks.workdir = $(myworkdir)
+tasks.execpath=$(builddir)
+slaves.hostnames = localhost
+slaves.nrclients = 2
+slaves.scriptpath = $(sourcedir)
+slaves.downloadretry = 10
+slaves.niceness = 10		
+slaves.basepath = $(myworkdir)/c95.wuclients
+
+###########################################################################
+# Polynomial selection with Kleinjung's algorithm
+###########################################################################
+
+tasks.polyselect.degree = 4
+
+tasks.polyselect.admax = 50000
+tasks.polyselect.incr = 60
+tasks.polyselect.adrange = 10000
+tasks.polyselect.P = 15000
+tasks.polyselect.nq = 2000
+tasks.polyselect.nrkeep = 100
+tasks.polyselect.ropteffort = 0.01
+
+
+###########################################################################
+# Sieve
+###########################################################################
+
+
+tasks.I = 12
+tasks.lim0 = 300000
+tasks.lim1 = 300000
+tasks.lpb0 = 21
+tasks.lpb1 = 21
+tasks.sieve.mfb0 = 42
+tasks.sieve.mfb1 = 42
+tasks.sieve.lambda0 = 2.2
+tasks.sieve.lambda1 = 2.2
+tasks.qmin = 120000
+tasks.sieve.qrange = 20000
+tasks.sieve.rels_wanted = 460000
+
+
+
+###########################################################################
+# Filtering
+###########################################################################
+
+tasks.filter.target_density = 100
+
+tasks.reconstructlog.partial=false
+
+###########################################################################
+# Individual log
+###########################################################################
+
+tasks.descent.init_I = 12
+tasks.descent.init_ncurves = 30
+tasks.descent.init_lpb = 39
+tasks.descent.init_lim = 300000
+tasks.descent.init_mfb = 78
+tasks.descent.init_tkewness = 300000
+tasks.descent.I = 12
+tasks.descent.lim0 = 300000
+tasks.descent.lim1 = 300000
+tasks.descent.lpb0 = 21
+tasks.descent.lpb1 = 21
+tasks.descent.mfb0 = 42
+tasks.descent.mfb1 = 42
+
+###########################################################################
+# Threads and Server Stuff
+###########################################################################
+
+tasks.polyselect.threads = 4
+tasks.sieve.las.threads = 4
+tasks.linalg.characters.threads = 4
+tasks.sqrt.threads = 4
+
+server.port = 36609
+server.ssl = yes
+server.whitelist = 127.0.0.1
+# server.address can be left commented to listen on all interfaces
+# server.address = localhost
+# server.threads = 4
