@@ -1,0 +1,182 @@
+(cado-nfs.venv) mint@mint:~/cado-nfs$ ./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+Warning:Parameters: Parameter tasks.execpath, previously set to value /home/mint/cado-nfs/build/mint, overwritten with value $(builddir)
+Info:root: No database exists yet
+Info:Database: Database URI is db:sqlite3:///home/mint/p95.db
+Info:Database: Opened connection to database /home/mint/p95.db
+Info:root: Setting tasks.linalg.bwc.threads=12 based on detected physical cores
+Info:root: Setting tasks.threads=16 based on detected logical cpus
+Info:root: tasks.threads = 16 [via tasks.threads]
+Info:root: tasks.polyselect.threads = 4 [via tasks.polyselect.threads]
+Info:root: tasks.sieve.las.threads = 4 [via tasks.sieve.las.threads]
+Info:root: tasks.linalg.bwc.threads = 12 [via tasks.linalg.bwc.threads]
+Info:root: tasks.sqrt.threads = 4 [via tasks.sqrt.threads]
+Info:root: Command line parameters: ./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+Info:root: If this computation gets interrupted, it can be resumed with ./cado-nfs.py /home/mint/p95.parameters_snapshot.1
+Info:Server Launcher: Adding mint to whitelist to allow clients on localhost to connect
+Info:API server: server whitelist is ['127.0.0.1/32', '127.0.0.1/32', '127.0.1.1/32']
+Info:API server: Running from werkzeug (1 thread(s))
+Info:Lattice Sieving: param rels_wanted is 460000
+Warning:Complete Factorization / Discrete logarithm: Parameter tasks.linalg.characters.threads = 4 was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Perhaps you meant one of the following ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect_ropt.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.makefb.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.freerel.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.las.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.purge.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.merge-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.linalg.bwc.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.reconstructlog.reconstructlog-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm: (If you wish to set all of these consistently, you may set tasks.threads)
+Info:Complete Factorization / Discrete logarithm: Computing Discrete Logs in GF(115792089237316195423570985008687907853269984665640564039457584007908834671663)
+Info:API server: Running on https://localhost:36609 (Press CTRL+C to quit))
+Info:API server: You can start additional cado-nfs-client.py scripts with parameters: --server=https://localhost:36609 --certsha1=45b9a955998f0390d66b67a8cc5cd4bd2adda695
+Info:API server: If you want to start additional clients, remember to add their hosts to server.whitelist
+Info:Client Launcher: Starting client id localhost on host localhost
+Info:Client Launcher: Starting client id localhost+2 on host localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:54] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:54] "GET /workunit HTTP/1.1" 404 -
+Info:Client Launcher: Running clients: localhost (Host localhost, PID 203064), localhost+2 (Host localhost, PID 203078)
+Info:Polynomial Selection (size optimized): Starting
+Info:Polynomial Selection (size optimized): 0 polynomials in queue from previous run
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_0-10000 to database
+Info:API server: Sending workunit p95_polyselect1_0-10000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:54] "GET /workunit HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_10000-20000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_20000-30000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_30000-40000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_40000-50000 to database
+Info:API server: Sending workunit p95_polyselect1_10000-20000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:56] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file polyselect, which resolves to /home/mint/cado-nfs/build/mint/polyselect/polyselect
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:56] "GET /file/polyselect HTTP/1.1" 200 -
+Info:API server: got request for file polyselect, which resolves to /home/mint/cado-nfs/build/mint/polyselect/polyselect
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:40:56] "GET /file/polyselect HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:01] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_20000-30000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:01] "GET /workunit HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:01] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_30000-40000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:02] "GET /workunit HTTP/1.1" 200 -
+Warning:Database: rolling back and retrying transaction (#1): thread 0x78fb44a706c0 connection 0x78fb44b1de50 transaction lambda <function WuAccess.result.<locals>.t at 0x78fb44b1a2a0>
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:13] "POST /upload HTTP/1.1" 200 -
+Warning:Database: rolling back and retrying transaction (#1): thread 0x78fb44a706c0 connection 0x78fb44b1de50 transaction lambda <function WuAccess.result.<locals>.t at 0x78fb44b199e0>
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:19] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_40000-50000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:19] "GET /workunit HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 847 polynomials, added 225 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.540000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_0-10000 as ok (20.0% => ETA Unknown)
+Warning:Database: rolling back and retrying transaction (#1): thread 0x78fb44a706c0 connection 0x78fb44b1de50 transaction lambda <function WuAccess.assign.<locals>.transaction at 0x78fb44b1a520>
+Info:Polynomial Selection (size optimized): Parsed 927 polynomials, added 25 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.460000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_10000-20000 as ok (40.0% => ETA Mon Feb  2 02:43:02 2026)
+Info:Polynomial Selection (size optimized): Parsed 967 polynomials, added 7 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.450000
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:27] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_20000-30000 as ok (60.0% => ETA Mon Feb  2 02:42:00 2026)
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:28] "POST /upload HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 970 polynomials, added 3 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.430000
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:28] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_30000-40000 as ok (80.0% => ETA Mon Feb  2 02:41:39 2026)
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:28] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (size optimized): Parsed 1007 polynomials, added 7 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.410000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_40000-50000 as ok (100.0% => ETA Mon Feb  2 02:41:29 2026)
+Info:Polynomial Selection (size optimized): Finished
+Info:Complete Factorization / Discrete logarithm: Polynomial Selection (size optimized)
+Info:Polynomial Selection (size optimized): Aggregate statistics:
+Info:Polynomial Selection (size optimized): potential collisions: 7158.5
+Info:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 6852/24.780/29.140/38.350/0.928
+Info:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 4718/24.190/27.824/31.260/0.955
+Info:Polynomial Selection (size optimized): Total time: 93.67
+Info:Polynomial Selection (root optimized): Starting
+Info:Polynomial Selection (root optimized): No polynomial was previously found
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_0-1 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_8-9 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_16-17 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_24-25 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_32-33 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_40-41 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_48-49 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_56-57 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_64-65 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_72-73 to database
+Info:API server: Sending workunit p95_polyselect2_0-1 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /workunit HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_8-9 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file polyselect_ropt, which resolves to /home/mint/cado-nfs/build/mint/polyselect/polyselect_ropt
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /file/polyselect_ropt HTTP/1.1" 200 -
+Info:API server: got request for file polyselect_ropt, which resolves to /home/mint/cado-nfs/build/mint/polyselect/polyselect_ropt
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /file/polyselect_ropt HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_0, which resolves to /home/mint/p95.polyselect2.raw_0
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /file/p95.polyselect2.raw_0 HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_8, which resolves to /home/mint/p95.polyselect2.raw_8
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:33] "GET /file/p95.polyselect2.raw_8 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_80-81 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_88-89 to database
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:35] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:35] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_16-17 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:36] "GET /workunit HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_24-25 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:36] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_16, which resolves to /home/mint/p95.polyselect2.raw_16
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:36] "GET /file/p95.polyselect2.raw_16 HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_24, which resolves to /home/mint/p95.polyselect2.raw_24
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:36] "GET /file/p95.polyselect2.raw_24 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): New best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0: Murphy E = 8.973e-07
+Info:Polynomial Selection (root optimized): New best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0: Murphy E = 1.580e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0 with E=1.532e-06 is no better than current best with E=1.580e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0 with E=1.543e-06 is no better than current best with E=1.580e-06
+Info:Polynomial Selection (root optimized): New best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0: Murphy E = 1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0 with E=1.260e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0 with E=1.150e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_0 with E=1.257e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_0-1 as ok (8.0% => ETA Unknown)
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_96-97 to database
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=7.784e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.080e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.222e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.252e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.220e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.443e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.116e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_8 with E=1.387e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_8-9 as ok (12.0% => ETA Mon Feb  2 02:44:42 2026)
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:38] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:38] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_32-33 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:38] "GET /workunit HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_40-41 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:38] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_32, which resolves to /home/mint/p95.polyselect2.raw_32
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:38] "GET /file/p95.polyselect2.raw_32 HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_40, which resolves to /home/mint/p95.polyselect2.raw_40
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:39] "GET /file/p95.polyselect2.raw_40 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.053e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=9.228e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.536e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.168e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.637e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.441e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.427e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_16 with E=1.306e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_16-17 as ok (20.0% => ETA Mon Feb  2 02:42:46 2026)
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.349e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.473e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.271e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.317e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.581e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=8.055e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.273e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/mint/p95.upload/p95.polyselect2.opt_24 with E=1.254e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_24-25 as ok (28.0% => ETA Mon Feb  2 02:42:17 2026)
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:40] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:40] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_48-49 to client localhost
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:40] "GET /workunit HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_56-57 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [02/Feb/2026 02:41:41] "GET /workunit HTTP/1.1" 200 -
