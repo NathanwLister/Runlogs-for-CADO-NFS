@@ -1,0 +1,176 @@
+mint@mint:~$ cd /home/mint/cado-nfs
+mint@mint:~/cado-nfs$ source cado-nfs.venv/bin/activate
+(cado-nfs.venv) mint@mint:~/cado-nfs$ ./cado-nfs.py /home/mint/p95.parameters_snapshot.2 target=103
+Info:root: No database exists yet
+Info:Database: Database URI is db:sqlite3:///home/mint/p95.db
+Info:Database: Opened connection to database /home/mint/p95.db
+Info:root: tasks.threads = 16 [via tasks.threads]
+Info:root: tasks.polyselect.threads = 4 [via tasks.polyselect.threads]
+Info:root: tasks.sieve.las.threads = 4 [via tasks.sieve.las.threads]
+Info:root: tasks.linalg.bwc.threads = 12 [via tasks.linalg.bwc.threads]
+Info:root: tasks.sqrt.threads = 4 [via tasks.sqrt.threads]
+Info:root: Using default hint file ./parameters/dlp/p80.hint
+Info:root: Command line parameters: ./cado-nfs.py /home/mint/p95.parameters_snapshot.2 target=103
+Info:root: If this computation gets interrupted, it can be resumed with ./cado-nfs.py /home/mint/p95.parameters_snapshot.3
+Info:Server Launcher: Adding mint to whitelist to allow clients on localhost to connect
+Info:API server: server whitelist is ['127.0.0.1/32', '127.0.0.1/32', '127.0.1.1/32']
+Info:API server: Running from werkzeug (1 thread(s))
+Info:Lattice Sieving: param rels_wanted is 460000
+Warning:Complete Factorization / Discrete logarithm: Parameter builddir = /home/mint/cado-nfs/build/mint was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Parameter myworkdir = /home/mint was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Parameter sourcedir = /home/mint/cado-nfs was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Parameter tasks.linalg.characters.threads = 4 was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Perhaps you meant one of the following ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect_ropt.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.makefb.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.freerel.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.las.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.purge.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.merge-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.linalg.bwc.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.reconstructlog.reconstructlog-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm: (If you wish to set all of these consistently, you may set tasks.threads)
+Info:Complete Factorization / Discrete logarithm: Computing Discrete Logs in GF(115792089237316195423570985008687907853269984665640564039457584007908834671663)
+Info:API server: Running on https://localhost:36609 (Press CTRL+C to quit))
+Info:API server: You can start additional cado-nfs-client.py scripts with parameters: --server=https://localhost:36609 --certsha1=45b9a955998f0390d66b67a8cc5cd4bd2adda695
+Info:API server: If you want to start additional clients, remember to add their hosts to server.whitelist
+Info:Client Launcher: Starting client id localhost on host localhost
+Info:werkzeug: 127.0.0.1 - - [05/Feb/2026 12:35:41] "GET /workunit HTTP/1.1" 404 -
+Info:Client Launcher: Starting client id localhost+2 on host localhost
+Info:werkzeug: 127.0.0.1 - - [05/Feb/2026 12:35:42] "GET /workunit HTTP/1.1" 404 -
+Info:Client Launcher: Running clients: localhost (Host localhost, PID 1172174), localhost+2 (Host localhost, PID 1172187)
+Info:Polynomial Selection (size optimized): Starting
+Info:Polynomial Selection (size optimized): 100 polynomials in queue from previous run, worst exp_E 23.410000
+Info:Polynomial Selection (size optimized): Already finished - nothing to do
+Info:Complete Factorization / Discrete logarithm: Polynomial Selection (size optimized)
+Info:Polynomial Selection (size optimized): Aggregate statistics:
+Info:Polynomial Selection (size optimized): potential collisions: 7158.5
+Info:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 6852/24.780/29.140/38.350/0.928
+Info:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 4718/24.190/27.824/31.260/0.955
+Info:Polynomial Selection (size optimized): Total time: 93.67
+Info:Polynomial Selection (root optimized): Starting
+Info:Polynomial Selection (root optimized): Best polynomial previously has Murphy_E = 1.702e-06
+Info:Polynomial Selection (root optimized): Already finished - nothing to do
+Info:Polynomial Selection (root optimized): Best overall polynomial was 99-th in list after size optimization
+Info:Complete Factorization / Discrete logarithm: Polynomial Selection (root optimized)
+Info:Polynomial Selection (root optimized): Aggregate statistics:
+Info:Polynomial Selection (root optimized): Total time: 53.92
+Info:Polynomial Selection (root optimized): Rootsieve time: 53.73
+Info:Number Theory for DLP: Starting
+Info:Number Theory for DLP: NumberTheory task has already run, reusing the result.
+Info:Complete Factorization / Discrete logarithm: Number Theory for DLP
+Info:Number Theory for DLP: Total cpu/real time for numbertheory_tool: 0.05/0.0507441
+Info:Generate Factor Base: Starting
+Info:Complete Factorization / Discrete logarithm: Generate Factor Base
+Info:Generate Factor Base: Total cpu/real time for makefb: 0.22/0.032989
+Info:Generate Free Relations: Starting
+Info:Complete Factorization / Discrete logarithm: Generate Free Relations
+Info:Generate Free Relations: Total cpu/real time for freerel: 0.89/0.174978
+Info:Lattice Sieving: Starting
+Info:Lattice Sieving: We want 460000 relation(s)
+Info:Lattice Sieving: Reached target of 460000 relations, now have 559560
+Info:Complete Factorization / Discrete logarithm: Lattice Sieving
+Info:Lattice Sieving: Aggregate statistics:
+Info:Lattice Sieving: Total number of relations: 559560
+Info:Lattice Sieving: Average J: 2048 for 4955 special-q, max bucket fill -bkmult 1.0,1s:1.158000
+Info:Lattice Sieving: Total time: 333.46s
+Info:Filtering - Duplicate Removal, splitting pass: Starting
+Info:Filtering - Duplicate Removal, splitting pass: No new files to split
+Info:Filtering - Duplicate Removal, splitting pass: Relations per slice: 0: 280608, 1: 278952
+Info:Complete Factorization / Discrete logarithm: Filtering - Duplicate Removal, splitting pass
+Info:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 3.47/1.20529
+Info:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 1.1s
+Info:Filtering - Duplicate Removal, removal pass: Starting
+Info:Filtering - Duplicate Removal, removal pass: No new files for slice 0, nothing to do
+Info:Filtering - Duplicate Removal, removal pass: No new files for slice 1, nothing to do
+Info:Filtering - Duplicate Removal, removal pass: 499393 unique relations remain in total
+Info:Complete Factorization / Discrete logarithm: Filtering - Duplicate Removal, removal pass
+Info:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 10.03/2.56371
+Info:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 2.2s
+Info:Complete Factorization / Discrete logarithm: Filtering - Galois
+Info:Filtering - Singleton removal: Starting
+Info:Filtering - Singleton removal: Already have a purged file, and no new input relations available. Nothing to do
+Info:API server: Got notification to stop serving Workunits
+Info:Lattice Sieving: Cancelling remaining workunits
+Info:Client Launcher: Stopped client localhost (Host localhost, PID 1172174)
+Info:Client Launcher: Stopped client localhost+2 (Host localhost, PID 1172187)
+Info:Complete Factorization / Discrete logarithm: Filtering - Singleton removal
+Info:Filtering - Singleton removal: Total cpu/real time for purge: 17.53/5.26106
+Info:Filtering - Merging: Starting
+Info:Complete Factorization / Discrete logarithm: Filtering - Merging
+Info:Filtering - Merging: Total cpu/real time for merge-dl: 3.29/0.501705
+Info:Filtering - Merging: Total cpu/real time for replay-dl: 0.4/0.380872
+Info:Schirokauer Maps: Starting
+Info:Complete Factorization / Discrete logarithm: Schirokauer Maps
+Info:Schirokauer Maps: Total cpu/real time for sm: 176.13/15.8315
+Info:Linear Algebra: Starting
+Info:Complete Factorization / Discrete logarithm: Linear Algebra
+Info:Linear Algebra: Total cpu/real time for bwc: 1399.38/202.351
+Info:Logarithms Reconstruction: Starting
+Info:Complete Factorization / Discrete logarithm: Logarithms Reconstruction
+Info:Logarithms Reconstruction: Total cpu/real time for reconstructlog-dl: 5584.18/413.847
+Info:Log queries: Starting
+Info:Log queries: Checking that log(2)=99324319301402430912699763723491987976789228862855167726730279805933075 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(2)=99324319301402430912699763723491987976789228862855167726730279805933075 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(3)=98863124979940571243538097311744818596190622054715861865516467321214219 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(3)=98863124979940571243538097311744818596190622054715861865516467321214219 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(5)=191937452713759596718495559656478647700580149218209428573927958897241664 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(5)=191937452713759596718495559656478647700580149218209428573927958897241664 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(7)=76075804673213675353430678508759070714761841395821507956412624092394193 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(7)=76075804673213675353430678508759070714761841395821507956412624092394193 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(11)=50996441209835381535329466826965126489028114949163352711987590342473609 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(11)=50996441209835381535329466826965126489028114949163352711987590342473609 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(13)=62850628288249781607365272530377650434331694314912572105039316761793842 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(13)=62850628288249781607365272530377650434331694314912572105039316761793842 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(17)=28740464227368630165663955966678739314974157355089412472154489308176260 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(17)=28740464227368630165663955966678739314974157355089412472154489308176260 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(19)=69084188752333238355627392339720242006203668584128994349515843552521105 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(19)=69084188752333238355627392339720242006203668584128994349515843552521105 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Complete Factorization / Discrete logarithm: Log queries
+Info:Individual logarithm: Starting
+Info:Individual logarithm: Now doing descent for target=103
+Info:Individual logarithm: Descent yields log(103)=114505884969262294417771356978535988065817033378769052565097004774732131
+Info:Log queries: Checking that log(103)=114505884969262294417771356978535988065817033378769052565097004774732131 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(103)=114505884969262294417771356978535988065817033378769052565097004774732131 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Complete Factorization / Discrete logarithm: Individual logarithm
+Info:Individual logarithm: Total cpu/real time for descent: 14.18/12.5231
+Info:API server: Got notification to stop serving Workunits
+Info:Filtering - Merging: Total cpu/real time for merge-dl: 3.29/0.501705
+Info:Filtering - Merging: Total cpu/real time for replay-dl: 0.4/0.380872
+Info:Logarithms Reconstruction: Total cpu/real time for reconstructlog-dl: 5584.18/413.847
+Info:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 3.47/1.20529
+Info:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 1.1s
+Info:Polynomial Selection (size optimized): Aggregate statistics:
+Info:Polynomial Selection (size optimized): potential collisions: 7158.5
+Info:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 6852/24.780/29.140/38.350/0.928
+Info:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 4718/24.190/27.824/31.260/0.955
+Info:Polynomial Selection (size optimized): Total time: 93.67
+Info:Filtering - Singleton removal: Total cpu/real time for purge: 17.53/5.26106
+Info:Number Theory for DLP: Total cpu/real time for numbertheory_tool: 0.05/0.0507441
+Info:Lattice Sieving: Aggregate statistics:
+Info:Lattice Sieving: Total number of relations: 559560
+Info:Lattice Sieving: Average J: 2048 for 4955 special-q, max bucket fill -bkmult 1.0,1s:1.158000
+Info:Lattice Sieving: Total time: 333.46s
+Info:Generate Factor Base: Total cpu/real time for makefb: 0.22/0.032989
+Info:Linear Algebra: Total cpu/real time for bwc: 1399.38/202.351
+Info:Individual logarithm: Total cpu/real time for descent: 14.18/12.5231
+Info:Generate Free Relations: Total cpu/real time for freerel: 0.89/0.174978
+Info:Schirokauer Maps: Total cpu/real time for sm: 176.13/15.8315
+Info:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 10.03/2.56371
+Info:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 2.2s
+Info:Polynomial Selection (root optimized): Aggregate statistics:
+Info:Polynomial Selection (root optimized): Total time: 53.92
+Info:Polynomial Selection (root optimized): Rootsieve time: 53.73
+Info:API server: Shutting down server
+Info:Complete Factorization / Discrete logarithm: Total cpu/elapsed time for entire Discrete logarithm: 8617.74/962.721
+Info:root: If you want to compute one or several new target(s), run ./cado-nfs.py /home/mint/p95.parameters_snapshot.3 target=<target>[,<target>,...]
+Info:root: logbase = 105622217851347573587573342861392737162134430649817929516494451957696787025861
+Info:root: target = 103
+Info:root: log(target) = 114505884969262294417771356978535988065817033378769052565097004774732131 mod ell
+114505884969262294417771356978535988065817033378769052565097004774732131
+
