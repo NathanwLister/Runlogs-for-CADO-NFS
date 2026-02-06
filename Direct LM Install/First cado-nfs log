@@ -1,0 +1,506 @@
+(cado-nfs.venv) oem@Work:~/cado-nfs$ ./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+Warning:Parameters: Parameter tasks.execpath, previously set to value /home/oem/cado-nfs/build/Work, overwritten with value $(builddir)
+Info:root: No database exists yet
+Info:Database: Database URI is db:sqlite3:///home/oem/Murage/p95.db
+Info:Database: Opened connection to database /home/oem/Murage/p95.db
+Info:root: Setting tasks.linalg.bwc.threads=12 based on detected physical cores
+Info:root: Setting tasks.threads=16 based on detected logical cpus
+Info:root: tasks.threads = 16 [via tasks.threads]
+Info:root: tasks.polyselect.threads = 4 [via tasks.polyselect.threads]
+Info:root: tasks.sieve.las.threads = 4 [via tasks.sieve.las.threads]
+Info:root: tasks.linalg.bwc.threads = 12 [via tasks.linalg.bwc.threads]
+Info:root: tasks.sqrt.threads = 4 [via tasks.sqrt.threads]
+Info:root: Command line parameters: ./cado-nfs.py -dlp --parameters MurageKibicho_Bitcoin.params --ell 205115282021455665897114700593932402728804164701536103180137503955397371
+Info:root: If this computation gets interrupted, it can be resumed with ./cado-nfs.py /home/oem/Murage/p95.parameters_snapshot.0
+Info:Server Launcher: Adding Work to whitelist to allow clients on localhost to connect
+Info:API server: server whitelist is ['127.0.0.1/32', '127.0.0.1/32', '127.0.1.1/32']
+Info:API server: Running from werkzeug (1 thread(s))
+Info:Lattice Sieving: param rels_wanted is 460000
+Warning:Complete Factorization / Discrete logarithm: Parameter tasks.linalg.characters.threads = 4 was not used anywhere
+Warning:Complete Factorization / Discrete logarithm: Perhaps you meant one of the following ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.polyselect.polyselect_ropt.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.makefb.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.freerel.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.sieve.las.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.purge.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.filter.merge-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.linalg.bwc.threads ?
+Warning:Complete Factorization / Discrete logarithm:   tasks.reconstructlog.reconstructlog-dl.threads ?
+Warning:Complete Factorization / Discrete logarithm: (If you wish to set all of these consistently, you may set tasks.threads)
+Info:Complete Factorization / Discrete logarithm: Computing Discrete Logs in GF(115792089237316195423570985008687907853269984665640564039457584007908834671663)
+Info:API server: Running on https://localhost:36609 (Press CTRL+C to quit))
+Info:API server: You can start additional cado-nfs-client.py scripts with parameters: --server=https://localhost:36609 --certsha1=0b7dae60cecaafb945ec5d622391160f8b740973
+Info:API server: If you want to start additional clients, remember to add their hosts to server.whitelist
+Info:Client Launcher: Starting client id localhost on host localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:03] "GET /workunit HTTP/1.1" 404 -
+Info:Client Launcher: Starting client id localhost+2 on host localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:03] "GET /workunit HTTP/1.1" 404 -
+Info:Client Launcher: Running clients: localhost (Host localhost, PID 120175), localhost+2 (Host localhost, PID 120188)
+Info:Polynomial Selection (size optimized): Starting
+Info:Polynomial Selection (size optimized): 0 polynomials in queue from previous run
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_0-10000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_10000-20000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_20000-30000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_30000-40000 to database
+Info:Polynomial Selection (size optimized): Adding workunit p95_polyselect1_40000-50000 to database
+Info:API server: Sending workunit p95_polyselect1_0-10000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:04] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file polyselect, which resolves to /home/oem/cado-nfs/build/Work/polyselect/polyselect
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:04] "GET /file/polyselect HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_10000-20000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:04] "GET /workunit HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:07] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_20000-30000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:07] "GET /workunit HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 847 polynomials, added 226 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.540000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_0-10000 as ok (20.0% => ETA Unknown)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:09] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_30000-40000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:09] "GET /workunit HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 927 polynomials, added 25 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.460000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_10000-20000 as ok (40.0% => ETA Fri Feb  6 09:51:33 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:14] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect1_40000-50000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:14] "GET /workunit HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 967 polynomials, added 7 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.450000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_20000-30000 as ok (60.0% => ETA Fri Feb  6 09:51:27 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:15] "POST /upload HTTP/1.1" 200 -
+Info:Polynomial Selection (size optimized): Parsed 970 polynomials, added 3 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.430000
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:15] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_30000-40000 as ok (80.0% => ETA Fri Feb  6 09:51:19 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:16] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:17] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:20] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:21] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:21] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (size optimized): Parsed 1007 polynomials, added 7 to priority queue (has 100)
+Info:Polynomial Selection (size optimized): Worst polynomial in queue now has exp_E 23.410000
+Info:Polynomial Selection (size optimized): Marking workunit p95_polyselect1_40000-50000 as ok (100.0% => ETA Fri Feb  6 09:51:22 2026)
+Info:Polynomial Selection (size optimized): Finished
+Info:Complete Factorization / Discrete logarithm: Polynomial Selection (size optimized)
+Info:Polynomial Selection (size optimized): Aggregate statistics:
+Info:Polynomial Selection (size optimized): potential collisions: 7158.5
+Info:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 6852/24.780/29.140/38.350/0.928
+Info:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 4718/24.190/27.824/31.260/0.955
+Info:Polynomial Selection (size optimized): Total time: 110.48
+Info:Polynomial Selection (root optimized): Starting
+Info:Polynomial Selection (root optimized): No polynomial was previously found
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_0-1 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_8-9 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_16-17 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_24-25 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_32-33 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_40-41 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_48-49 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_56-57 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_64-65 to database
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_72-73 to database
+Info:API server: Sending workunit p95_polyselect2_0-1 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:22] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file polyselect_ropt, which resolves to /home/oem/cado-nfs/build/Work/polyselect/polyselect_ropt
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:22] "GET /file/polyselect_ropt HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_0, which resolves to /home/oem/Murage/p95.polyselect2.raw_0
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:22] "GET /file/p95.polyselect2.raw_0 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_80-81 to database
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:23] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_8-9 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:23] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_8, which resolves to /home/oem/Murage/p95.polyselect2.raw_8
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:23] "GET /file/p95.polyselect2.raw_8 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): New best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0: Murphy E = 1.543e-06
+Info:Polynomial Selection (root optimized): New best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0: Murphy E = 1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=1.580e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=1.161e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=8.973e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=1.532e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=1.080e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_0 with E=1.427e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_0-1 as ok (8.0% => ETA Unknown)
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_88-89 to database
+Info:API server: Sending workunit p95_polyselect2_16-17 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:25] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_16, which resolves to /home/oem/Murage/p95.polyselect2.raw_16
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:25] "GET /file/p95.polyselect2.raw_16 HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:25] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_24-25 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:25] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_24, which resolves to /home/oem/Murage/p95.polyselect2.raw_24
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:25] "GET /file/p95.polyselect2.raw_24 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=7.784e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.222e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.116e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.260e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.418e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.543e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.269e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_8 with E=1.443e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_8-9 as ok (16.0% => ETA Fri Feb  6 09:52:14 2026)
+Info:Polynomial Selection (root optimized): Adding workunit p95_polyselect2_96-97 to database
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_32-33 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_32, which resolves to /home/oem/Murage/p95.polyselect2.raw_32
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "GET /file/p95.polyselect2.raw_32 HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_40-41 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_40, which resolves to /home/oem/Murage/p95.polyselect2.raw_40
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:27] "GET /file/p95.polyselect2.raw_40 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.542e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.262e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.473e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.222e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.257e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.387e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=7.601e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_16 with E=1.228e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_16-17 as ok (20.0% => ETA Fri Feb  6 09:52:10 2026)
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.374e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.154e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.278e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.254e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.470e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.121e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.637e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_24 with E=1.178e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_24-25 as ok (28.0% => ETA Fri Feb  6 09:51:51 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:29] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_48-49 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:29] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_48, which resolves to /home/oem/Murage/p95.polyselect2.raw_48
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:29] "GET /file/p95.polyselect2.raw_48 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.463e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.053e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=7.499e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.317e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.252e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.337e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.476e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_32 with E=1.176e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_32-33 as ok (36.0% => ETA Fri Feb  6 09:51:48 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_56-57 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_56, which resolves to /home/oem/Murage/p95.polyselect2.raw_56
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "GET /file/p95.polyselect2.raw_56 HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_64-65 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_64, which resolves to /home/oem/Murage/p95.polyselect2.raw_64
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:31] "GET /file/p95.polyselect2.raw_64 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=7.472e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.220e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.150e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.437e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.306e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.384e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.216e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_40 with E=1.345e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_40-41 as ok (44.0% => ETA Fri Feb  6 09:51:47 2026)
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.406e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.099e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.332e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.090e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.271e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.012e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=8.210e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_48 with E=1.520e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_48-49 as ok (52.0% => ETA Fri Feb  6 09:51:42 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_72-73 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_72, which resolves to /home/oem/Murage/p95.polyselect2.raw_72
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "GET /file/p95.polyselect2.raw_72 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.522e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.360e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.243e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.450e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.271e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.506e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=9.259e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_56 with E=1.360e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_56-57 as ok (60.0% => ETA Fri Feb  6 09:51:42 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_80-81 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_80, which resolves to /home/oem/Murage/p95.polyselect2.raw_80
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:33] "GET /file/p95.polyselect2.raw_80 HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:34] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_88-89 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:34] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_88, which resolves to /home/oem/Murage/p95.polyselect2.raw_88
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:34] "GET /file/p95.polyselect2.raw_88 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=8.196e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=1.209e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=1.262e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=4.563e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=9.842e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=5.608e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=1.324e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_64 with E=1.686e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_64-65 as ok (68.0% => ETA Fri Feb  6 09:51:42 2026)
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.328e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.429e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.429e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.245e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.510e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.133e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.320e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_72 with E=1.514e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_72-73 as ok (76.0% => ETA Fri Feb  6 09:51:39 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:35] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_polyselect2_96-97 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:35] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file p95.polyselect2.raw_96, which resolves to /home/oem/Murage/p95.polyselect2.raw_96
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:35] "GET /file/p95.polyselect2.raw_96 HTTP/1.1" 200 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.624e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.497e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=7.585e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.306e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.254e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.642e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.550e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_80 with E=1.485e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_80-81 as ok (84.0% => ETA Fri Feb  6 09:51:40 2026)
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "POST /upload HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "GET /workunit HTTP/1.1" 404 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:37] "GET /workunit HTTP/1.1" 404 -
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.346e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.614e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.424e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.388e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.278e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.604e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.347e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_88 with E=1.690e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_88-89 as ok (92.0% => ETA Fri Feb  6 09:51:39 2026)
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_96 with E=8.563e-07 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_96 with E=1.258e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_96 with E=1.592e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial from file /home/oem/Murage/p95.upload/p95.polyselect2.opt_96 with E=1.283e-06 is no better than current best with E=1.702e-06
+Info:Polynomial Selection (root optimized): Marking workunit p95_polyselect2_96-97 as ok (100.0% => ETA Fri Feb  6 09:51:38 2026)
+Info:Polynomial Selection (root optimized): Kept 39 polynomials with MurphyE from 1.702e-06 to 1.374e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.0 had MurphyE 1.702e-06, refined to 1.695e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.1 had MurphyE 1.690e-06, refined to 1.673e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.2 had MurphyE 1.686e-06, refined to 1.681e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.3 had MurphyE 1.642e-06, refined to 1.649e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.4 had MurphyE 1.637e-06, refined to 1.625e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.5 had MurphyE 1.624e-06, refined to 1.603e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.6 had MurphyE 1.614e-06, refined to 1.613e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.7 had MurphyE 1.604e-06, refined to 1.617e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.8 had MurphyE 1.592e-06, refined to 1.581e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.9 had MurphyE 1.580e-06, refined to 1.571e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.10 had MurphyE 1.550e-06, refined to 1.566e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.11 had MurphyE 1.543e-06, refined to 1.543e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.12 had MurphyE 1.543e-06, refined to 1.576e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.13 had MurphyE 1.542e-06, refined to 1.543e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.14 had MurphyE 1.532e-06, refined to 1.512e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.15 had MurphyE 1.522e-06, refined to 1.504e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.16 had MurphyE 1.520e-06, refined to 1.512e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.17 had MurphyE 1.514e-06, refined to 1.503e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.18 had MurphyE 1.510e-06, refined to 1.523e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.19 had MurphyE 1.506e-06, refined to 1.531e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.20 had MurphyE 1.497e-06, refined to 1.513e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.21 had MurphyE 1.485e-06, refined to 1.503e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.22 had MurphyE 1.476e-06, refined to 1.460e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.23 had MurphyE 1.473e-06, refined to 1.468e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.24 had MurphyE 1.470e-06, refined to 1.453e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.25 had MurphyE 1.463e-06, refined to 1.483e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.26 had MurphyE 1.450e-06, refined to 1.441e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.27 had MurphyE 1.443e-06, refined to 1.445e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.28 had MurphyE 1.437e-06, refined to 1.411e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.29 had MurphyE 1.429e-06, refined to 1.422e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.30 had MurphyE 1.429e-06, refined to 1.445e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.31 had MurphyE 1.427e-06, refined to 1.404e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.32 had MurphyE 1.424e-06, refined to 1.421e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.33 had MurphyE 1.418e-06, refined to 1.413e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.34 had MurphyE 1.406e-06, refined to 1.413e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.35 had MurphyE 1.388e-06, refined to 1.374e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.36 had MurphyE 1.387e-06, refined to 1.410e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.37 had MurphyE 1.384e-06, refined to 1.375e-06
+Info:Polynomial Selection (root optimized): Polynomial /home/oem/Murage/p95.poly.38 had MurphyE 1.374e-06, refined to 1.369e-06
+Info:Polynomial Selection (root optimized): Best polynomial is /home/oem/Murage/p95.poly.0
+Info:Polynomial Selection (root optimized): Finished, best polynomial has Murphy_E = 1.702e-06
+Info:Polynomial Selection (root optimized): Best polynomial is:
+n: 115792089237316195423570985008687907853269984665640564039457584007908834671663
+skew: 78278.898
+c0: -1360093440600783189870
+c1: 1008258525590998343
+c2: -1089557227096
+c3: -53710404
+c4: 720
+Y0: -3737854960364804219
+Y1: 9478055921549
+# MurphyE (Bf=2.097e+06,Bg=2.097e+06,area=1.007e+12) = 1.702e-06
+# f(x) = 720*x^4-53710404*x^3-1089557227096*x^2+1008258525590998343*x-1360093440600783189870
+# g(x) = 9478055921549*x-3737854960364804219
+
+Info:Polynomial Selection (root optimized): Best overall polynomial was 99-th in list after size optimization
+Info:Complete Factorization / Discrete logarithm: Polynomial Selection (root optimized)
+Info:Polynomial Selection (root optimized): Aggregate statistics:
+Info:Polynomial Selection (root optimized): Total time: 88.04
+Info:Polynomial Selection (root optimized): Rootsieve time: 87.85
+Info:Number Theory for DLP: Starting
+Info:Complete Factorization / Discrete logarithm: Number Theory for DLP
+Info:Number Theory for DLP: Total cpu/real time for numbertheory_tool: 0.04/0.041064
+Info:Generate Factor Base: Starting
+Info:Generate Factor Base: Finished
+Info:Complete Factorization / Discrete logarithm: Generate Factor Base
+Info:Generate Factor Base: Total cpu/real time for makefb: 0.21/0.0289152
+Info:Generate Free Relations: Starting
+Info:Generate Free Relations: Found 6536 free relations
+Info:Generate Free Relations: Finished
+Info:Complete Factorization / Discrete logarithm: Generate Free Relations
+Info:Generate Free Relations: Total cpu/real time for freerel: 0.93/0.143005
+Info:Lattice Sieving: Starting
+Info:Lattice Sieving: We want 460000 relation(s)
+Info:Lattice Sieving: Adding workunit p95_sieving_120000-140000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_140000-160000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_160000-180000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_180000-200000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_200000-220000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_220000-240000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_240000-260000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_260000-280000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_280000-300000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_300000-320000 to database
+Info:API server: Sending workunit p95_sieving_120000-140000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:38] "GET /workunit HTTP/1.1" 200 -
+Info:API server: got request for file las, which resolves to /home/oem/cado-nfs/build/Work/sieve/las
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:39] "GET /file/las HTTP/1.1" 200 -
+Info:API server: got request for file p95.poly, which resolves to /home/oem/Murage/p95.poly
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:39] "GET /file/p95.poly HTTP/1.1" 200 -
+Info:API server: got request for file p95.roots1.gz, which resolves to /home/oem/Murage/p95.roots1.gz
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:39] "GET /file/p95.roots1.gz HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_sieving_140000-160000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:51:39] "GET /workunit HTTP/1.1" 200 -
+Info:Lattice Sieving: Adding workunit p95_sieving_320000-340000 to database
+Info:Lattice Sieving: Adding workunit p95_sieving_340000-360000 to database
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:53:31] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_sieving_160000-180000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:53:31] "GET /workunit HTTP/1.1" 200 -
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:53:31] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_sieving_180000-200000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:53:31] "GET /workunit HTTP/1.1" 200 -
+Info:Lattice Sieving: Found 197285 relations in '/home/oem/Murage/p95.upload/p95.120000-140000.gz', total is now 197285/460000
+Info:Lattice Sieving: Marking workunit p95_sieving_120000-140000 as ok (42.9% => ETA Unknown)
+Info:Lattice Sieving: Adding workunit p95_sieving_360000-380000 to database
+Info:Lattice Sieving: Found 193023 relations in '/home/oem/Murage/p95.upload/p95.140000-160000.gz', total is now 390308/460000
+Info:Lattice Sieving: Marking workunit p95_sieving_140000-160000 as ok (84.8% => ETA Fri Feb  6 09:54:13 2026)
+Info:Lattice Sieving: Adding workunit p95_sieving_380000-400000 to database
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:55:16] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_sieving_200000-220000 to client localhost
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:55:16] "GET /workunit HTTP/1.1" 200 -
+Info:Lattice Sieving: Found 169252 relations in '/home/oem/Murage/p95.upload/p95.180000-200000.gz', total is now 559560/460000
+Info:Lattice Sieving: Marking workunit p95_sieving_180000-200000 as ok (121.6% => ETA Fri Feb  6 09:54:17 2026)
+Info:Lattice Sieving: Adding workunit p95_sieving_400000-420000 to database
+Info:Lattice Sieving: Reached target of 460000 relations, now have 559560
+Info:Complete Factorization / Discrete logarithm: Lattice Sieving
+Info:Lattice Sieving: Aggregate statistics:
+Info:Lattice Sieving: Total number of relations: 559560
+Info:Lattice Sieving: Average J: 2048 for 4955 special-q, max bucket fill -bkmult 1.0,1s:1.158000
+Info:Lattice Sieving: Total time: 329.37s
+Info:Filtering - Duplicate Removal, splitting pass: Starting
+Info:Filtering - Duplicate Removal, splitting pass: Splitting 3 new files
+Info:Filtering - Duplicate Removal, splitting pass: Relations per slice: 0: 280608, 1: 278952
+Info:Complete Factorization / Discrete logarithm: Filtering - Duplicate Removal, splitting pass
+Info:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 3.59/1.24684
+Info:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 1.1s
+Info:Filtering - Duplicate Removal, removal pass: Starting
+Info:Filtering - Duplicate Removal, removal pass: 250586 unique relations remain on slice 0
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:55:21] "POST /upload HTTP/1.1" 200 -
+Info:API server: Sending workunit p95_sieving_220000-240000 to client localhost+2
+Info:werkzeug: 127.0.0.1 - - [06/Feb/2026 09:55:21] "GET /workunit HTTP/1.1" 200 -
+Info:Filtering - Duplicate Removal, removal pass: 248807 unique relations remain on slice 1
+Info:Filtering - Duplicate Removal, removal pass: Of 559560 newly added relations 499393 were unique (ratio 0.892474)
+Info:Filtering - Duplicate Removal, removal pass: 499393 unique relations remain in total
+Info:Complete Factorization / Discrete logarithm: Filtering - Duplicate Removal, removal pass
+Info:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 12.85/3.26653
+Info:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 2.8s
+Info:Complete Factorization / Discrete logarithm: Filtering - Galois
+Info:Filtering - Singleton removal: Starting
+Info:Filtering - Singleton removal: Reading 499393 unique and 6536 free relations, total 505929
+Info:Filtering - Singleton removal: After purge, 59719 relations with 59717 primes remain with weight 1396707 and excess 2
+Info:Filtering - Singleton removal: Have enough relations
+Info:API server: Got notification to stop serving Workunits
+Info:Lattice Sieving: Cancelling remaining workunits
+Info:Client Launcher: Stopped client localhost (Host localhost, PID 120175)
+Info:Client Launcher: Stopped client localhost+2 (Host localhost, PID 120188)
+Info:Complete Factorization / Discrete logarithm: Filtering - Singleton removal
+Info:Filtering - Singleton removal: Total cpu/real time for purge: 16.72/5.03941
+Info:Filtering - Merging: Starting
+Info:Filtering - Merging: Merged matrix has 19507 rows and total weight 1964717 (100.7 entries per row on average)
+Info:Complete Factorization / Discrete logarithm: Filtering - Merging
+Info:Filtering - Merging: Total cpu/real time for merge-dl: 3.38/0.533068
+Info:Filtering - Merging: Total cpu/real time for replay-dl: 0.46/0.400419
+Info:Schirokauer Maps: Starting
+Info:Complete Factorization / Discrete logarithm: Schirokauer Maps
+Info:Schirokauer Maps: Total cpu/real time for sm: 181.78/15.8198
+Info:Linear Algebra: Starting
+Info:Linear Algebra: Using 2 as default value for n to account for Schirokauer maps
+Info:Linear Algebra: Using 2*n=4 as default value for m
+Info:Complete Factorization / Discrete logarithm: Linear Algebra
+Info:Linear Algebra: Total cpu/real time for bwc: 1292.61/168.722
+Info:Logarithms Reconstruction: Starting
+Info:Complete Factorization / Discrete logarithm: Logarithms Reconstruction
+Info:Logarithms Reconstruction: Total cpu/real time for reconstructlog-dl: 5238.22/362.13
+Info:Log queries: Starting
+Info:Log queries: Based on log(2)=99324319301402430912699763723491987976789228862855167726730279805933075, we expect that logarithms are given in base 105622217851347573587573342861392737162134430649817929516494451957696787025861
+Info:Log queries: Check skipped for this log, as it is the only known log value at this point
+Info:Log queries: Checking that log(3)=98863124979940571243538097311744818596190622054715861865516467321214219 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(3)=98863124979940571243538097311744818596190622054715861865516467321214219 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(5)=191937452713759596718495559656478647700580149218209428573927958897241664 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(5)=191937452713759596718495559656478647700580149218209428573927958897241664 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(7)=76075804673213675353430678508759070714761841395821507956412624092394193 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(7)=76075804673213675353430678508759070714761841395821507956412624092394193 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(11)=50996441209835381535329466826965126489028114949163352711987590342473609 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(11)=50996441209835381535329466826965126489028114949163352711987590342473609 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(13)=62850628288249781607365272530377650434331694314912572105039316761793842 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(13)=62850628288249781607365272530377650434331694314912572105039316761793842 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(17)=28740464227368630165663955966678739314974157355089412472154489308176260 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(17)=28740464227368630165663955966678739314974157355089412472154489308176260 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Log queries: Checking that log(19)=69084188752333238355627392339720242006203668584128994349515843552521105 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861...
+Info:Log queries: Checking that log(19)=69084188752333238355627392339720242006203668584128994349515843552521105 is correct in base 105622217851347573587573342861392737162134430649817929516494451957696787025861... passed
+Info:Complete Factorization / Discrete logarithm: Log queries
+Info:API server: Got notification to stop serving Workunits
+Info:Linear Algebra: Total cpu/real time for bwc: 1292.61/168.722
+Info:Filtering - Merging: Total cpu/real time for merge-dl: 3.38/0.533068
+Info:Filtering - Merging: Total cpu/real time for replay-dl: 0.46/0.400419
+Info:Polynomial Selection (root optimized): Aggregate statistics:
+Info:Polynomial Selection (root optimized): Total time: 88.04
+Info:Polynomial Selection (root optimized): Rootsieve time: 87.85
+Info:Filtering - Duplicate Removal, splitting pass: Total cpu/real time for dup1: 3.59/1.24684
+Info:Filtering - Duplicate Removal, splitting pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, splitting pass: CPU time for dup1: 1.1s
+Info:Logarithms Reconstruction: Total cpu/real time for reconstructlog-dl: 5238.22/362.13
+Info:Polynomial Selection (size optimized): Aggregate statistics:
+Info:Polynomial Selection (size optimized): potential collisions: 7158.5
+Info:Polynomial Selection (size optimized): raw lognorm (nr/min/av/max/std): 6852/24.780/29.140/38.350/0.928
+Info:Polynomial Selection (size optimized): optimized lognorm (nr/min/av/max/std): 4718/24.190/27.824/31.260/0.955
+Info:Polynomial Selection (size optimized): Total time: 110.48
+Info:Filtering - Singleton removal: Total cpu/real time for purge: 16.72/5.03941
+Info:Filtering - Duplicate Removal, removal pass: Total cpu/real time for dup2: 12.85/3.26653
+Info:Filtering - Duplicate Removal, removal pass: Aggregate statistics:
+Info:Filtering - Duplicate Removal, removal pass: CPU time for dup2: 2.8s
+Info:Schirokauer Maps: Total cpu/real time for sm: 181.78/15.8198
+Info:Number Theory for DLP: Total cpu/real time for numbertheory_tool: 0.04/0.041064
+Info:Lattice Sieving: Aggregate statistics:
+Info:Lattice Sieving: Total number of relations: 559560
+Info:Lattice Sieving: Average J: 2048 for 4955 special-q, max bucket fill -bkmult 1.0,1s:1.158000
+Info:Lattice Sieving: Total time: 329.37s
+Info:Generate Factor Base: Total cpu/real time for makefb: 0.21/0.0289152
+Info:Generate Free Relations: Total cpu/real time for freerel: 0.93/0.143005
+Info:API server: Shutting down server
+Info:Complete Factorization / Discrete logarithm: Total cpu/elapsed time for entire Discrete logarithm: 8191.24/811.937
+Info:root: If you want to compute one or several new target(s), run ./cado-nfs.py /home/oem/Murage/p95.parameters_snapshot.0 target=<target>[,<target>,...]
+
