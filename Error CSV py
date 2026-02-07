@@ -1,0 +1,11 @@
+oem@Work:~$ python CSV.py
+Read 8368 rows
+Traceback (most recent call last):
+  File "/home/oem/CSV.py", line 58, in <module>
+    logbase, rhs_projection_log_base_unkown  = CadoSnapshotLog(cadoFolder, cadoScript, logsPath, rhs_values[i], ell, primeNumber)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oem/CSV.py", line 30, in CadoSnapshotLog
+    assert 1 == pow(pow(logbase, logtarget, primeNumber) * pow(target, -1, primeNumber), (primeNumber-1)//ell, primeNumber)
+                        ^^^^^^^
+UnboundLocalError: cannot access local variable 'logbase' where it is not associated with a value
+
